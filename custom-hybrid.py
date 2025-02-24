@@ -1,8 +1,7 @@
 #!/var/ossec/framework/python/bin/python3
-# Copyright (C) 2015-2022, Wazuh Inc.
+# Copyright (C) 2015-2025, Wazuh Inc.
 # Template by Leonardo Carlos Armesto
 # Created by Leonel Arrua
-#syscheck.md5_after
 
 import json
 import sys
