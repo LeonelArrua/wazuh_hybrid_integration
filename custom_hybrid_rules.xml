@@ -1,0 +1,21 @@
+<group name="sysmon,syscheck">
+      <rule id="105001" level="3">
+        <field name="hybrid.found">\.+</field>
+        <description>File Analized by Hybrid Analisis</description>
+      </rule>
+      
+      <rule id="105002" level="10">
+        <field name="hybrid.av_detect">^!0</field>
+        <description>A file has detected by $(hybrid.av_detect)% off anti-malware in Hybrid Analisis</description>
+      </rule> 
+
+      <rule id="105003" level="8">
+        <field name="hybrid.threat_score">^0</field>
+        <description>A file has detected like a threat in Hybrid Analisis with a score off $(hybrid.threat_score)</description>
+      </rule> 
+
+      <rule id="105004" level="12">
+        <field name="hybrid.verdict">malicious</field>
+        <description>Malicious file detected by Hybrid Analisis</description>
+      </rule> 
+</group>
