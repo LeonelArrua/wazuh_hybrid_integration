@@ -13,10 +13,12 @@ Improved Threat Detection: By leveraging Hybrid Analysis’ malware intelligence
 * Hybrid Analysis Account: You need a Hybrid Analysis account and an API key to use this integration. You can sign up and obtain your API key from Hybrid Analysis.
 
 ## Instalation:
-* Download the custom-hybrid.py file and add it into integrations folder (Example: /var/ossec/integrations)
+* Download the custom-hybrid.py file and add it into integrations folder (`/var/ossec/integration`s)
 * Change permissions and owner
-  -chmod 750 /var/ossec/integrations/custom-hybrid.py
-  -chown root:ossec /var/ossec/integrations/custom-hybrid.py
+  `-chmod 750 /var/ossec/integrations/custom-hybrid.py`
+  `-chown root:ossec /var/ossec/integrations/custom-hybrid.py`
 * Modify your ossec.conf adding the lines present in the ossec.conf provided in this repository
-* Add the provided custom rules file (/var/ossec/etc/rules/)
+* Add the provided custom rules file (`/var/ossec/etc/rules/`)
 * Restart Wazuh Manager
+ `service wazuh-manager restart`
+
